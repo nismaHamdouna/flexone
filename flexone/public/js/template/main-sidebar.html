@@ -1,0 +1,175 @@
+<aside class="main-sidebar">
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+        {% var company=frappe.defaults.get_default("company"); %}
+      <li class="header text-center">{{ __(company) }}</li>
+      <li>
+        <a href="/desk#dashboard">
+          <i class="fa fa-bar-chart"></i> <span>{{ __("Dashboard") }}</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="/desk#modules/Accounts">
+          <i class="fa fa-calculator"></i> <span>{{ __("Accounts") }}</span>
+        </a>
+      </li>
+      <!--<li class="treeview">
+        <a href="#modules/Accounts">
+          <i class="fa fa-calculator"></i>
+          <span>{{ __("Accounts") }}</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-right pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#List/Journal Entry/List"><i class="fa fa-circle-o"></i>{{ __("Journal Entry") }}</a></li>
+          <li><a href="#List/Payment Entry/List"><i class="fa fa-circle-o"></i>{{ __("Payment Entry") }}</a></li>
+          <li><a href="#List/Sales Invoice/List"><i class="fa fa-circle-o"></i>{{ __("Sales Invoice") }}</a></li>
+          <li><a href="#List/Purchase Invoice/List"><i class="fa fa-circle-o"></i>{{ __("Purchase Invoice") }}</a></li>
+          <li><a href="#modules/Accounts"><i class="fa fa-circle-o"></i>{{ __(" More...") }}</a></li>
+        </ul>
+      </li> -->
+
+
+      <li>
+        <a href="/desk#modules/Stock">
+          <i class="fa fa-cube"></i> <span>{{ __("Stock") }}</span>
+        </a>
+      </li>
+      <!--<li class="treeview">
+        <a href="#modules/Stock">
+            <i class="fa fa-cube"></i>
+          <span>{{ __("Stock") }}</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-right pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#List/Item/List"><i class="fa fa-circle-o"></i>{{ __("Item") }}</a></li>
+          <li><a href="#List/Stock Entry/List"><i class="fa fa-circle-o"></i>{{ __("Stock Entry") }}</a></li>
+          <li><a href="#List/Delivery Note/List"><i class="fa fa-circle-o"></i>{{ __("Delivery Note") }}</a></li>
+          <li><a href="#List/Purchase Receipt/List"><i class="fa fa-circle-o"></i>{{ __("Purchase Receipt") }}</a></li>
+          <li><a href="#modules/Stock"><i class="fa fa-circle-o"></i>{{ __(" More...") }}</a></li>
+      </ul>
+    </li>-->
+
+
+      <li>
+        <a href="/desk#modules/Buying">
+          <i class="fa fa-truck"></i> <span>{{ __("Buying") }}</span>
+        </a>
+      </li>
+      <!--<li class="treeview">
+        <a href="#modules/Buying">
+          <i class="fa fa-truck"></i>
+          <span>{{ __("Buying") }}</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-right pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#List/Material Request/List"><i class="fa fa-circle-o"></i>{{ __("Material Request") }}</a></li>
+          <li><a href="#List/Request for Quotation/List"><i class="fa fa-circle-o"></i>{{ __("Request for Quotation") }}</a></li>
+          <li><a href="#List/Supplier Quotation/List"><i class="fa fa-circle-o"></i>{{ __("Supplier Quotation") }}</a></li>
+          <li><a href="#List/Purchase Order/List"><i class="fa fa-circle-o"></i>{{ __("Purchase Order") }}</a></li>
+          <li><a href="#modules/Buying"><i class="fa fa-circle-o"></i>{{ __(" More...") }}</a></li>
+        </ul>
+      </li>-->
+
+      <li>
+        <a href="/desk#modules/CRM">
+          <i class="fa fa-phone-square"></i> <span>{{ __("CRM") }}</span>
+        </a>
+      </li>
+      <!--<li class="treeview">
+        <a href="#modules/CRM">
+          <i class="fa fa-phone-square"></i>
+          <span>{{ __("CRM") }}</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-right pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#List/Lead/List"><i class="fa fa-circle-o"></i>{{ __("Lead") }}</a></li>
+          <li><a href="#List/Opportunity/List"><i class="fa fa-circle-o"></i>{{ __("Opportunity") }}</a></li>
+          <li><a href="#modules/CRM"><i class="fa fa-circle-o"></i>{{ __(" More...") }}</a></li>
+        </ul>
+      </li>-->
+      <li>
+        <a href="/desk#modules/Selling">
+          <i class="fa fa-smile-o"></i> <span>{{ __("Sales") }}</span>
+        </a>
+      </li>
+      <!--<li class="treeview">
+        <a href="#modules/Selling">
+          <i class="fa fa-smile-o"></i>
+          <span>{{ __("Sales") }}</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-right pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#List/Quotation/List"><i class="fa fa-circle-o"></i>{{ __("Quotation") }}</a></li>
+          <li><a href="#List/Sales Order/List"><i class="fa fa-circle-o"></i>{{ __("Sales Order") }}</a></li>
+          <li><a href="#modules/Selling"><i class="fa fa-circle-o"></i>{{ __(" More...") }}</a></li>
+        </ul>
+      </li>
+    -->
+
+      <li>
+        <a href="/desk#modules/HR">
+          <i class="fa fa-male"></i> <span>{{ __("Human Resources") }}</span>
+        </a>
+      </li>
+      <!--<li class="treeview">
+        <a href="#modules/HR">
+          <i class="fa fa-male"></i>
+          <span>{{ __("Human Resources") }}</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-right pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#List/Employee/List"><i class="fa fa-circle-o"></i>{{ __("Employee") }}</a></li>
+          <li><a href="#List/Leave Application/List"><i class="fa fa-circle-o"></i>{{ __("Leave Application") }}</a></li>
+          <li><a href="#List/Employee Loan Application/List"><i class="fa fa-circle-o"></i>{{ __("Employee Loan Application") }}</a></li>
+          <li><a href="#List/Employee Advance/List"><i class="fa fa-circle-o"></i>{{ __("Employee Advance") }}</a></li>
+          <li><a href="#List/Expense Claim/List"><i class="fa fa-circle-o"></i>{{ __("Expense Claim") }}</a></li>
+          <li><a href="#modules/HR"><i class="fa fa-circle-o"></i>{{ __(" More...") }}</a></li>
+        </ul>
+      </li>-->
+
+      <li>
+        <a href="/desk#modules/Manufacturing">
+          <i class="fa fa-industry"></i> <span>{{ __("Manufacturing") }}</span>
+        </a>
+      </li>
+      <li>
+        <a href="/desk#modules/Projects">
+          <i class="fa fa-slideshare"></i> <span>{{ __("Projects") }}</span>
+        </a>
+      </li>
+      <li>
+        <a href="/desk#modules/Maintenance">
+          <i class="fa fa-wrench"></i> <span>{{ __("Maintenance") }}</span>
+        </a>
+      </li>
+      <li>
+        <a href="/desk#modules/Support">
+          <i class="fa fa-life-ring"></i> <span>{{ __("Support") }}</span>
+        </a>
+      </li>
+      <li>
+        <a href="/desk#modules/Setup">
+          <i class="fa fa-cog"></i> <span>{{ __("Setup") }}</span>
+        </a>
+      </li>
+
+  </ul>
+  </section>
+  <!-- /.sidebar -->
+</aside>
+<div class="overlay"><div>

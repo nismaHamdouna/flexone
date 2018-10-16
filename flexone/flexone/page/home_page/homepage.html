@@ -1,0 +1,788 @@
+<style>
+#page-home-page .page-head .page-title, #page-home-page .page-head{display: none;}
+#page-home-page .page-body .layout-main-section-wrapper .layout-main-section{border-left: 0px dotted #d6d6d6;}
+body[data-route="home-page"] #body_div{
+	background-image: -webkit-linear-gradient(to top, #caf6d1, #a6efdd, #89e6ec, #80d8f9, #91c8fd);
+	background-image: -o-linear-gradient(to top, #caf6d1, #a6efdd, #89e6ec, #80d8f9, #91c8fd);
+	background-image: -ms-linear-gradient(to top, #caf6d1, #a6efdd, #89e6ec, #80d8f9, #91c8fd);
+	background-image: linear-gradient(to top, #caf6d1, #a6efdd, #89e6ec, #80d8f9, #91c8fd);
+}
+</style>
+<section class="content desk_page" >
+	<div class="row">
+		<div class="col-md-4 ">
+			<div class="deskBox box-primary">
+				<div class="box-header with-border">
+	              <a href="./desk#modules/Accounts"><h3 class="box-title">{%= __("Account") %}</h3></a>
+	            </div>
+	            <div class="row boxSmall">
+	            	<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Journal Entry">
+								<div><i class="fa fa-book"></i></div>
+								<p>{%= __("Journal Entry") %}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Payment Entry">
+								<div><i class="fa fa-credit-card"></i></div>
+								<p>{%=__("Payment Entry") %}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/Sales Invoice">
+							<div><i class="fa fa-file-text"></i></div>
+							<p>{%=__("Sales Invoice") %}</p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Purchase Invoice">
+								<div><i class="fa fa-file-text-o"></i></div>
+								<p>{%=__("Purchase Invoice") %}</p>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup") %}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#Form/Accounts Settings">{%=__("Accounts Settings") %}</a></li>
+				            	<li><a href="./desk#List/Company">{%=__("Company") %}</a></li>
+				            	<li><a href="./desk#Tree/Account">{%=__("Chart of Accounts") %}</a></li>
+				            	<li><a href="./desk#Tree/Account">{%=__("Budget") %}</a></li>
+				            	<li><a href="./desk#List/Mode of Payment">{%=__("Mode of Payment") %}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i> {%=__("Reports") %} </h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#query-report/General Ledger">{%=__("General Ledger") %}</a></li>
+				            	<li><a href="./desk#query-report/Trial Balance">{%=__("Trial Balance") %}</a></li>
+				            	<li><a href="./desk#query-report/Profit and Loss Statement">{%=__("Profit and Loss Statement") %}</a></li>
+				            	<li><a href="./desk#query-report/Accounts Receivable">{%=__("Accounts Receivable") %}</a></li>
+				            	<li><a href="./desk#query-report/Accounts Payable">{%=__("Accounts Payable") %}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="col-md-4 ">
+			<div class="deskBox box-success">
+				<div class="box-header with-border">
+	             <a href="./desk#modules/Stock"> <h3 class="box-title">{%=__("Stock")%}</h3> </a>
+	            </div>
+	            <div class="row boxSmall">
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/Stock Entry">
+							<div><i class="fa fa-stack-overflow"></i></div>
+							<p>{%=__("Stock Entry")%}</p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Delivery Note">
+								<div><i class="fa fa-sticky-note-o"></i></div>
+								<p>{%=__("Delivery Note")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Purchase Receipt">
+								<div><i class="fa fa-file-powerpoint-o"></i></div>
+								<p>{%=__("Purchase Receipt")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="/desk#List/Material Request">
+								<div><i class="fa fa-envelope"></i></div>
+								<p>{%=__("Material Request")%}</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#Form/Stock Settings">{%=__("Stock Settings")%}</a></li>
+				            	<li><a href="./desk#List/Item">{%=__("Item")%}</a></li>
+				            	<li><a href="./desk#Tree/Item Group">{%=__("Item Group")%}</a></li>
+				            	<li><a href="./desk#List/Batch">{%=__("Batch")%}</a></li>
+				            	<li><a href="./desk#List/Warehouse">{%=__("Warehouse")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i>{%=__("Reports")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#query-report/Stock Ledger">{%=__("Stock Ledger")%}</a></li>
+				            	<li><a href="./desk#query-report/Stock Balance">{%=__("Stock Balance")%}</a></li>
+				            	<li><a href="./desk#query-report/Stock Projected Qty">{%=__("Stock Projected Qty")%}</a></li>
+				            	<li><a href="./desk#query-report/Item Variant Details">{%=__("Item Variant Details")%}</a></li>
+				            	<li><a href="./desk#query-report/Batch Item Expiry Status">{%=__("Batch Item Expiry Status")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+		<div class="col-md-4 ">
+			<div class="deskBox box-warning">
+				<div class="box-header with-border">
+	              <a href="./desk#modules/CRM"><h3 class="box-title">{%=__("CRM")%}</h3></a>
+	            </div>
+	            <div class="row boxSmall">
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/Lead">
+							<div><i class="fa fa-smile-o"></i></div>
+							<p>{%=__("Lead")%} <br> <br></p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Opportunity">
+								<div><i class="fa fa-thumbs-up"></i></div>
+								<p>{%=__("Opportunity")%} <br> <br></p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Customer">
+								<div><i class="fa fa-user-circle-o"></i></div>
+								<p>{%=__("Customer")%}  <br> <br></p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Contact">
+								<div><i class="fa fa-address-card"></i></div>
+								<p>{%=__("Contact")%} <br> <br></p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#List/Campaign">{%=__("Campaign")%}</a></li>
+				            	<li><a href="./desk#Tree/Sales Person">{%=__("Sales Person")%}</a></li>
+				            	<li><a href="./desk#List/Lead Source">{%=__("Lead Source")%}</a></li>
+				            	<li><a href="./desk#Tree/Territory">{%=__("Territory")%}</a></li>
+				            	<li><a href="./desk#Form/SMS Settings">{%=__("SMS Settings")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i>{%=__("Reports")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#query-report/Lead Details">{%=__("Lead Details")%}</a></li>
+				            	<li><a href="./desk#sales-funnel">{%=__("Sales Funnel")%}</a></li>
+				            	<li><a href="./desk#query-report/Inactive Customers">{%=__("Inactive Customers")%}</a></li>
+				            	<li><a href="./desk#query-report/Lead Owner Efficiency">{%=__("Lead Owner Efficiency")%}</a></li>
+				            	<li><a href="./desk#query-report/Campaign Efficiency">{%=__("Campaign Efficiency")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 ">
+			<div class="deskBox box-danger">
+				<div class="box-header with-border">
+	              <a href="./desk#modules/Selling"><h3 class="box-title">{%=__("Sales")%}</h3></a>
+	            </div>
+	            <div class="row boxSmall">
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/Quotation">
+							<div><i class="fa fa-bullhorn"></i></div>
+							<p>{%=__("Quotation")%}<br> <br></p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Sales Order">
+								<div><i class="fa fa-file"></i></div>
+								<p>{%=__("Sales Order")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Customer">
+								<div><i class="fa fa-user-circle-o"></i></div>
+								<p>{%=__("Customer")%} <br> <br></p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Contact">
+								<div><i class="fa fa-address-card"></i></div>
+								<p>{%=__("Contact")%} <br> <br></p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#Form/Selling Settings">{%=__("Selling Settings")%}</a></li>
+				            	<li><a href="./desk#Tree/Customer Group">{%=__("Customer Group")%}</a></li>
+				            	<li><a href="./desk#List/Product Bundle">{%=__("Product Bundle")%}</a></li>
+				            	<li><a href="./desk#List/Pricing Rule">{%=__("Pricing Rule")%}</a></li>
+				            	<li><a href="./desk#Report/Item Price">{%=__("Item Price")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i>{%=__("Reports")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#purchase-analytics">{%=__("Purchase Analytics")%}</a></li>
+				            	<li><a href="./desk#query-report/Purchase Order Trends">{%=__("Purchase Order Trends")%}</a></li>
+				            	<li><a href="./desk#query-report/Items To Be Requested">{%=__("Items To Be Requested")%} </a></li>
+				            	<li><a href="./desk#query-report/Requested Items To Be Ordered">{%=__("Requested Items To Be Ordered")%}</a></li>
+				            	<li><a href="./desk#query-report/Item-wise Purchase History">{%=__("Item-wise Purchase History")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-md-4 ">
+			<div class="deskBox box-primary">
+				<div class="box-header with-border">
+	              <a href="./desk#modules/Buying"><h3 class="box-title">{%=__("Buying")%}</h3></a>
+	            </div>
+	            <div class="row boxSmall">
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/Material Request">
+							<div><i class="fa fa-envelope"></i></div>
+							<p>{%=__("Material Request")%}</p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Request for Quotation">
+								<div><i class="fa fa-edit"></i></div>
+								<p>{%=__("Request for Quotation")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Supplier Quotation">
+								<div><i class="fa fa-file-pdf-o"></i></div>
+								<p>{%=__("Supplier Quotation")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Purchase Order">
+								<div><i class="fa fa-bookmark-o "></i></div>
+								<p>{%=__("Purchase Order")%}</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#Form/Buying Settings">{%=__("Buying Settings")%}</a></li>
+				            	<li><a href="./desk#List/Supplier">{%=__("Supplier")%} </a></li>
+				            	<li><a href="./desk#List/Supplier Type">{%=__("Supplier Type")%}</a></li>
+				            	<li><a href="./desk#List/Contact">{%=__("Contact")%}</a></li>
+				            	<li><a href="./desk#List/Address">{%=__("Address")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i>{%=__("Reports")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#purchase-analytics">{%=__("Purchase Analytics")%}</a></li>
+				            	<li><a href="./desk#query-report/Purchase Order Trends">{%=__("Purchase Order Trends")%}</a></li>
+				            	<li><a href="./desk#query-report/Items To Be Requested">{%=__("Items To Be Requested")%} </a></li>
+				            	<li><a href="./desk#query-report/Requested Items To Be Ordered">{%=__("Requested Items To Be Ordered")%}</a></li>
+				            	<li><a href="./desk#query-report/Item-wise Purchase History">{%=__("Item-wise Purchase History")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 ">
+			<div class="deskBox box-success">
+				<div class="box-header with-border">
+	              <a href="./desk#modules/HR"><h3 class="box-title">{%=__("Human Resources")%}</h3></a>
+	            </div>
+	            <div class="row boxSmall">
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/Employee">
+							<div><i class="fa fa-user"></i></div>
+							<p>{%=__("Employee")%} <br> <br></p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Attendance">
+								<div><i class="fa fa-check-square"></i></div>
+								<p>{%=__("Attendance")%} <br> <br></p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Leave Application">
+								<div><i class="fa fa-envelope-open-o"></i></div>
+								<p>{%=__("Leave Application")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Expense Claim">
+								<div><i class="fa fa-money"></i></div>
+								<p>{%=__("Expense Claim")%}</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#Form/HR Settings">{%=__("HR Settings")%}</a></li>
+				            	<li><a href="./desk#List/Department">{%=__("Department")%}</a></li>
+				            	<li><a href="./desk#List/Branch">{%=__("Branch")%}</a></li>
+				            	<li><a href="./desk#List/Employment Type">{%=__("Employment Type")%}</a></li>
+				            	<li><a href="./desk#List/Holiday List">{%=__("Holiday List")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i>{%=__("Reports")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#query-report/Employee Leave Balance">{%=__("Employee Leave Balance")%}</a></li>
+				            	<li><a href="./desk#Report/Employee/Employee Information">{%=__("Employee Information")%}</a></li>
+				            	<li><a href="./desk#query-report/Salary Register">{%=__("Salary Register")%}</a></li>
+				            	<li><a href="./desk#query-report/Monthly Attendance Sheet">{%=__("Monthly Attendance Sheet")%}</a></li>
+				            	<li><a href="./desk#List/Salary Structure">{%=__("Salary Structure")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 ">
+			<div class="deskBox box-warning">
+				<div class="box-header with-border">
+	              <a href="./desk#modules/Manufacturing"><h3 class="box-title">{%=__("Manufacturing")%}</h3></a>
+	            </div>
+	            <div class="row boxSmall">
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/BOM">
+							<div><i class="fa fa-folder-open"></i></div>
+							<p>{%=__("Bill of Materials")%}</p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Production Order">
+								<div><i class="fa fa-clipboard"></i></div>
+								<p>{%=__("Production Order")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Stock Entry">
+								<div><i class="fa fa-stack-overflow"></i></div>
+								<p>{%=__("Stock Entry")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#Form/Production Planning Tool">
+								<div><i class="fa fa-sliders"></i></div>
+								<p>{%=__("Production Planning Tool")%}</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#Form/Manufacturing Settings">{%=__("Manufacturing Settings")%}</a></li>
+				            	<li><a href="./desk#List/Workstation">{%=__("Workstation")%}</a></li>
+				            	<li><a href="./desk#List/Operation">{%=__("Operation")%}</a></li>
+				            	<li><a href="./desk#Form/BOM Update Tool">{%=__("BOM Update Tool")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i>{%=__("Reports")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="/desk#query-report/Open Production Orders">{%=__("Open Production Orders")%}</a></li>
+				            	<li><a href="./desk#query-report/Production Orders in Progress">{%=__("Production Orders in Progress")%}</a></li>
+				            	<li><a href="./desk#query-report/Completed Production Orders">{%=__("Completed Production Orders")%}</a></li>
+				            	<li><a href="./desk#production-analytics">{%=__("Production Analytics")%}</a></li>
+				            	<li><a href="./desk#query-report/BOM Stock Report">{%=__("BOM Stock Report")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 ">
+			<div class="deskBox box-danger">
+				<div class="box-header with-border">
+	              <a href="./desk#modules/Projects"><h3 class="box-title">{%=__("Project")%}</h3></a>
+	            </div>
+	            <div class="row boxSmall">
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/Project">
+							<div><i class="fa fa-hand-paper-o"></i></div>
+							<p>{%=__("Project")%}<br> <br></p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Task">
+								<div><i class="fa fa-tasks"></i></div>
+								<p>{%=__("Task")%}<br> <br></p>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#List/Project Type">{%=__("Project Type")%}</a></li>
+				            	<li><a href="./desk#List/Activity Type">{%=__("Activity Type")%}</a></li>
+				            	<li><a href="./desk#List/Activity Cost">{%=__("Activity Cost")%}</a></li>
+				            	<li><a href="./desk#List/Timesheet">{%=__("Timesheet")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i>{%=__("Reports")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#query-report/Daily Timesheet Summary">{%=__("Daily Timesheet Summary")%}</a></li>
+				            	<li><a href="./desk#query-report/Project wise Stock Tracking">{%=__("Project wise Stock Tracking")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 ">
+			<div class="deskBox box-primary">
+				<div class="box-header with-border">
+	              <a href="./desk#modules/Maintenance"><h3 class="box-title">{%=__("Maintenance")%} & {%=__("Support")%}</h3></a>
+	            </div>
+	            <div class="row boxSmall">
+					<div class="col-md-3 ">
+					 <div class="inBox">
+						<a href="./desk#List/Issue">
+							<div><i class="fa fa-exclamation-triangle"></i></div>
+							<p>{%=__("Issue")%}<br> <br></p>
+						</a>
+					 </div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Warranty Claim">
+								<div><i class="fa fa-exchange"></i></div>
+								<p>{%=__("Warranty Claim")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Maintenance Schedule">
+								<div><i class="fa fa-calendar-check-o"></i></div>
+								<p>{%=__("Maintenance Schedule")%}</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 ">
+						<div class="inBox">
+							<a href="./desk#List/Maintenance Visit">
+								<div><i class="fa fa-ambulance"></i></div>
+								<p>{%=__("Maintenance Visit")%}</p>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-md-5">
+						<div class="subBox">
+				            <h3 class="box-subtitle"><i class="fa fa-wrench"></i>{%=__("Setup")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#List/Serial No">{%=__("Serial No")%}</a></li>
+				            	<li><a href="./desk#List/Communication">{%=__("Communication")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+					<div class="col-md-7">
+						<div class="subBox">
+				            <h3 class="box-subtitle "><i class="fa fa-file-excel-o"></i>{%=__("Reports")%}</h3>
+				            <ul class="listDesk">
+				            	<li><a href="./desk#support-analytics">{%=__("Support Analytics")%}</a></li>
+				            	<li><a href="./desk#query-report/Minutes to First Response for Issues">{%=__("Minutes to First Response for Issues")%}</a></li>
+				            </ul>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</section>
+<div class="desklogo">
+		<img src="/assets/flexone/images/logo1.png" />
+			<p>your partner to success</p>
+	</div>
+<div class="powered">
+	<p>Powered by <img src="/assets/flexone/images/erpnext-logo.svg" /> ERPNext</p>
+</div>
+
+
+<style type="text/css">
+	.desk_page{
+        position: relative;
+        width: 100%;
+        padding: 20px 0;
+	}
+	.desk_page .col-md-4{ padding-left: 5px; padding-right: 5px;}
+	.deskBox{
+		position: relative;
+		border-radius: 3px;
+	    background: #ffffff;
+	    border-top: 3px solid #d2d6de;
+	    margin-bottom: 20px;
+	    width: 100%;
+	    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	}
+
+	.deskBox.box-primary {
+		border: 1px solid #3c8dbc;
+		border-top: 3px solid #3c8dbc;
+	}
+
+	.deskBox.box-success {
+	    border-top-color: #00a65a;
+			border: 1px solid #00a65a;
+    border-top: 3px solid #00a65a;
+	}
+	.deskBox.box-warning {
+	    border-top-color: #f39c12;
+			border: 1px solid #f39c12;
+		border-top: 3px solid #f39c12;
+	}
+	.deskBox.box-danger {
+	    border-top-color: #dd4b39;
+			border: 1px solid #dd4b39;
+		border-top: 3px solid #dd4b39;
+	}
+	.deskBox .box-header {
+	    color: #444;
+	    display: block;
+	    padding: 10px;
+	    position: relative;
+	}
+	.deskBox .box-header.with-border {
+	    border-bottom: 1px solid #f4f4f4;
+	}
+	.deskBox .box-header .box-title {
+	    display: inline-block;
+	    font-size: 18px;
+	    margin: 0;
+	    line-height: 1;
+	}
+	.deskBox  .box-subtitle{
+		 font-size: 16px;
+		  display: inline-block;
+		   margin: 0;
+	    line-height: 1;
+	    font-weight: 400;
+	}
+	.deskBox  .box-subtitle i{
+		padding-right: 5px;
+		font-weight: 500;
+	}
+	.deskBox .row {
+	    margin-right: 0px;
+	    margin-left: 0px;
+	}
+	.deskBox .row .col-md-3, .deskBox .row .col-md-6,  .deskBox .row .col-md-5,  .deskBox .row .col-md-7 {
+		padding: 5px;
+	}
+	.deskBox .inBox{
+		margin: 0px;
+		background: #f2f2f2;
+		border-radius: 5px;
+		min-height:80px;
+	}
+	.deskBox .inBox{
+		display: block;
+	}
+	.deskBox .inBox div{
+		text-align: center;
+		padding: 5px ;
+	}
+	.deskBox .inBox div i{
+		font-size: 18px;
+		color: #6495ed;
+	}
+	.deskBox .inBox p{
+		margin:0;
+		text-align: center;
+		font-size: 15px;
+	}
+	.deskBox .inBox a:hover p, .deskBox .inBox a:hover {
+		text-decoration: none;
+	}
+	.deskBox .inBox:hover{
+		background: #63b571;
+	}
+	.deskBox .inBox:hover p{
+		color: #fff;
+	}
+	.deskBox .inBox:hover i{
+	    color: #fff;
+	}
+
+	.deskBox .boxSmall{
+		padding-top: 5px;
+		padding-bottom: 8px;
+	}
+	.listDesk{
+		padding: 5px 0;
+	    list-style: none;
+	    font-size: 13px;
+	    margin-left: 20px;
+	    line-height: 22px;
+			min-height: 145px;
+	}
+	.listDesk li a:hover{
+		text-decoration: none;
+		    color: #2170ba;
+	}
+	.deskBox .subBox{
+		padding: 3px;
+	}
+
+	.deskBox.box-primary .box-header.with-border {
+	    border-bottom: 1px solid #3c8dbc;
+	}
+
+	.deskBox.box-success .box-header.with-border {
+	    border-bottom: 1px solid #00a65a;
+	}
+	.deskBox.box-warning .box-header.with-border {
+	    border-bottom: 1px solid #f39c12;
+	}
+	.deskBox.box-danger .box-header.with-border {
+	    border-bottom: 1px solid #dd4b39;
+	}
+	.deskBox.box-primary .subBox{
+		 border: 1px solid #3c8dbc;
+	}
+	.deskBox.box-success .subBox{
+		 border: 1px solid #00a65a;
+	}
+	.deskBox.box-warning .subBox{
+		 border: 1px solid #f39c12;
+	}
+	.deskBox.box-danger .subBox{
+		 border: 1px solid #dd4b39;
+	}
+	.desklogo{
+		display: block;
+		margin: auto;
+		padding: 5px;
+		text-align: center;
+	}
+	.desklogo img{
+	  max-width: 65px;
+		display: inline-block;
+	}
+	.desklogo p{
+		font-style: italic;
+		font-size: 12px;
+		text-align: center;
+		margin: 2px;
+	}
+</style>

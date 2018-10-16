@@ -1,0 +1,200 @@
+Data Import Template,,,,
+Table:,Translation,,,
+,,,,
+,,,,
+Notes:,,,,
+Please do not change the template headings.,,,,
+First data column must be blank.,,,,
+"If you are uploading new records, leave the ""name"" (ID) column blank.",,,
+"If you are uploading new records, ""Naming Series"" becomes mandatory, if present.",,
+Only mandatory fields are necessary for new records. You can delete non-mandatory columns if you wish.,,,,
+"For updating, you can update only selective columns.",,,
+You can only upload upto 5000 records in one go. (may be less in some cases),,,,
+,,,,
+DocType:,Translation,,,
+Column Labels:,ID,Language,Source Text,Translated Text
+Column Name:,name,language,source_name,target_name
+Mandatory:,Yes,No,No,No
+Type:,Data (text),Link,Code,Code
+Info:,,Valid Language,,
+Start entering data below this line,,,,
+,,ar,More,المزيد
+,,ar,(Jan (Qty,كمية يناير
+,,ar,Accounts,أدارة الحسابات
+,,ar,Accounts Receivable,حسابات العملاء
+,,ar,Accounts Receivable Summary,ملخص حسابات القبض
+,,ar,Add Child,اضافة حساب
+,,ar,Advance amount,المبلغ المقدم
+,,ar,ADVANCE PAYMENTS,الدفعات المقدمة
+,,ar,Allow Zero Valuation Rate,السماح بمعدل تقييم صفر
+,,ar,Amount,المبلغ
+,,ar,Asset Depreciation Ledger,دفتر استاذ اهلاك الأصول
+,,ar,Assigned To Me,أسندت لي
+,,ar,Available Batch Qty at Warehouse,الكمية المتاحة من الدفعة في المخزن
+,,ar,Available Qty at Warehouse,الكمية المتاحة في المخزن
+,,ar,Available Stock for Packing Items,المخزون المتاح للتعبئة
+,,ar,Balance,رصيد
+,,ar,Balance Sheet,قائمة المركز المالي
+,,ar,Bank Entry,قيد بنكي
+,,ar,Batch Item Expiry Status,حالة تاريخ صلاحية الصنف علي مستوي الدفعة
+,,ar,Batch-Wise Balance History,رصيد المخزون علي مستوي الدفعات
+,,ar,Bill of Materials,جدول المواد
+,,ar,BOM Browser,تصفح جداول المواد
+,,ar,BOM Search,البحث في جداول المواد
+,,ar,BOM Stock Report,تقرير مخزون جدول المواد
+,,ar,BOM Update Tool,اداة تحديث جداول المواد
+,,ar,Budget Variance Report,تقرير فروقات الموازنة
+,,ar,Buying,أدارة المشتريات
+,,ar,Chargeable,خصوم
+,,ar,Contact,الأسماء
+,,ar,Cr,دائن
+,,ar,Credit,دائن
+,,ar,Credit Note Issued,تسوية
+,,ar,Ctrl+enter to save,Ctrl+enter للحفظ
+,,ar,Customer,عميل
+,,ar,Customer Acquisition and Loyalty,ولاء واكتساب العملاء
+,,ar,Customer Credit Balance,تقرير الحد الائتماني وارصدة العملاء
+,,ar,Customer Group,الفروع
+,,ar,Customer Name,العميل
+,,ar,Debit To,مدين الي :
+,,ar,Delivered Items To Be Billed,سندات التسليم الغير مفوترة
+,,ar,Depreciation,اهلاك
+,,ar,Depreciation Entry,قيد اهلاك
+,,ar,Designation,المسمي الوظيفي
+,,ar,DOCTYPE,نوع الوثيقة
+,,ar,Dr,مدين
+,,ar,DUE AMOUNT,مبلغ مستحق
+,,ar,Employee Loan,سلفة موظف
+,,ar,Employee Loan Application,طلب سلفة موظف
+,,ar,Employee Loan Management,ادارة سلف الموظفين
+,,ar,Employment Type,نوع التوظيف
+,,ar,Entry Type,نوع القيد
+,,ar,Equity,حقوق ملكية
+,,ar,Excise Entry,قيد ضريبة
+,,ar,Exit,تفاصيل الاستقالة
+,,ar,Expense,مصروف
+,,ar,Expense Claim,مطالبة مصروف
+,,ar,Expense Claim Type,نوع مطالبة المصروف
+,,ar,Expense Claims,مطالبة المصروف
+,,ar,Feedback,معلومات اخري
+,,ar,Fleet Management,ادارة الاسطول
+,,ar,Flex Soft,ؤسسة النظم المرنة لتقنية المعلومات
+,,ar,flexone,فلكس 1
+,,ar,Fuel UOM,وحدة قياس الوقود
+,,ar,Held On,تاريخ قبول الاستقالة
+,,ar,Human Resources,أدارة الموارد البشرية
+,,ar,Income,الإيرادات
+,,ar,Income Account,حساب الدخل
+,,ar,Insert Above,ادراج بالأعلي
+,,ar,Is Advance,هل هو دفعة مقدمة
+,,ar,Is Group,هل هو حساب رئيسي
+,,ar,Is Opening,هل هو افتتاحي
+,,ar,Is Opening Entry,هل هو  قيد افتتاحي
+,,ar,Issued Items Against Production Order,الاصناف الصادرة مقابل امر انتاج
+,,ar,Item Attribute,خصائص الصنف
+,,ar,Item-wise Purchase Register,تقرير المشتريات علي مستوي الصنف
+,,ar,Itemwise Recommended Reorder Level,اعادة الطلب علي مستي الصنف
+,,ar,Job Applicant,طلب وظيفة
+,,ar,Landed Cost Voucher,معالج التكلفة النهائية
+,,ar,Last Purchase Rate,اخر سعر شراء
+,,ar,Letter Head,رأس الرسالة
+,,ar,Loan Type,نوع السلفة
+,,ar,Make,إجراء
+,,ar,Manufacturing,أدارة التصنيع
+,,ar,Match Payments with Invoices,تسوية دفعات العملاء مع الفواتير
+,,ar,Materials Required (Exploded),الأصناف المطلوبة
+,,ar,More,المزيد
+,,ar,Net Profit/Loss,نهائي
+,,ar,New Account Name,اسم الحساب الجديد
+,,ar,New Company,شركة جديدة
+,,ar,No Tags,لاتوجد وسوم
+,,ar,Offer Letter,عرض وظيفي
+,,ar,Open,مفتوح
+,,ar,Opening Entry,قيد افتتاحي
+,,ar,Operation,العمليات الانتاجية
+,,ar,Ordered Items To Be Billed,أوامر البيع الغير مفوترة
+,,ar,Ordered Items To Be Delivered,أوامر البيع الغير مسلمة
+,,ar,Outstanding Amount,المبلغ المعلق
+,,ar,Packing Slip,قسيمة التعبئة
+,,ar,Party Type,نوع الحساب
+,,ar,Pay To / Recd From,دفع الي / استلام من
+,,ar,Payment Gateway Account,حساب بوابة الدفع
+,,ar,Pending,معلقة
+,,ar,Pending SO Items For Purchase Request,تقرير تفصيلي أوامر الشراء
+,,ar,Period Closing Voucher,قيد اغلاق الفترة
+,,ar,POS,نقاط البيع
+,,ar,Posting Date,تاريخ الادخال
+,,ar,Price List,سعر قائمة الشراء
+,,ar,Price List Rate,سعر قائمة الأسعار
+,,ar,Print Heading,عنوان الطباعة
+,,ar,Process Payroll,معالجة الرواتب
+,,ar,Production Order,أمر انتاج
+,,ar,Production Orders in Progress,اوامر الانتاج قيد العمل
+,,ar,Production Planning Tool,أداة تخطيط الانتاج
+,,ar,Project wise Stock Tracking,تتبع المشاريع علي مستوي المخزون
+,,ar,Projects,أدارة المشاريع
+,,ar,Purchase Order Items To Be Billed,أوامر الشراء الغير مفوترة
+,,ar,Purchase Order Items To Be Received,أوامر الشراء الغير مستلمة
+,,ar,Purchase Taxes and Charges Template,قالب الضرائب علي المشتريات
+,,ar,Qty as per Stock UOM,الكمية بناء علي وحدة قياس المنتج
+,,ar,Rate,السعر
+,,ar,Receive,استلام
+,,ar,Received Items To Be Billed,الأصناف المستلمة الغير مفوترة
+,,ar,Recruitment,التوظيف
+,,ar,Reference Date,تاريخ المرجع
+,,ar,Reference Type,نوع المرجع
+,,ar,Remarks,التعليقات
+,,ar,Reports,التقارير
+,,ar,Request for Quotation,طلب عرض سعر
+,,ar,Requested Items To Be Ordered,تقرير متابعة طلبات المواد
+,,ar,Requested Items To Be Transferred,الأصناف المطلوبة للتحويل
+,,ar,Return,مرتجع
+,,ar,Round Off,خصم
+,,ar,Rounded Total,الاجمالي المقرب
+,,ar,Salary Register,تقرير الرواتب الشهرية
+,,ar,Sales Funnel,دورة المبيعات
+,,ar,Sales Order,امر بيع
+,,ar,Sales Partner,مندوب مبيعات
+,,ar,Sales Person,مندوب المبيعات
+,,ar,Sales Person-wise Transaction Summary,ملخص المبيعات علي مستوي مندوب المبيعات
+,,ar,Sales Register,تقرير المبيعات والمرتجعات
+,,ar,Sales Taxes and Charges Template,قالب الضرائب علي المبيعات
+,,ar,Salutation,البادئة
+,,ar,School/University,المدرسة / الجامعة
+,,ar,Selling,أدارة المبيعات
+,,ar,Serial No,الرقم المتسلسل
+,,ar,Serial No Service Contract Expiry,تاريخ نهاية عقد الصيانة بناء علي الرقم المتسلسل
+,,ar,Serial No Status,حالة الرقم المتسلسل
+,,ar,Serial No Warranty Expiry,نهاية ضمان الرقم المتسلسل
+,,ar,Show tags,إظهار الوسوم
+,,ar,Stock,أدارة المستودعات
+,,ar,Stock Ageing,تقرير عمر المخزون
+,,ar,Stock Qty,كمية المخزون
+,,ar,Stock Received But Not Billed,المخزون المستلم الغير مفوتر
+,,ar,Stock Summary,ملخص المخزون
+,,ar,Stock UOM,وحدة قياس المنتج
+,,ar,Submitted,معتمدة
+,,ar,Supplier Quotation,عرض سعر مورد
+,,ar,Tags,الوسوم
+,,ar,Tax ID No,الرقم الضريبي
+,,ar,The first Leave Approver in the list will be set as the default Leave Approver,اول شخص في القائمة سيكون هو الموافق علي الاجازة الافتراضي
+,,ar,To Bill,العمليات للفوترة
+,,ar,To Deliver and Bill,للتسليم والفوترة
+,,ar,To Receive,غير مستلمة
+,,ar,To Receive and Bill,للتسليم والفوترة
+,,ar,Tools,ألادوات
+,,ar,Top 5 Items,اكثر الاصناف مبيعات
+,,ar,Top 5 Outstanding Customer,اعلي العملاء مديونية
+,,ar,TOTAL COLLECTION,مجموع المجموع
+,,ar,TOTAL SALES,إجمالي المبيعات
+,,ar,Total Sales Amount,إجمالي حجم المبيعات
+,,ar,Trial Balance for Party,ميزان المراجعة للعملاء والموردين
+,,ar,Unit of Measure (UOM),وحدات القياس
+,,ar,UOM Conversion Factor,وحدة قياس معامل التحويل
+,,ar,Update Bank Transaction Dates,تحديث تاريخ العمليات البنكية
+,,ar,User Remark,التعليقات
+,,ar,Valuation Rate,سعر التقييم الافتراضي
+,,ar,Vehicle Log,سجل السيارة
+,,ar,WRITE OFF,خصم الكسور
+,,ar,Write Off Entry,قيد اطفاء
+,,en,Payment Entry,Payment Voucher

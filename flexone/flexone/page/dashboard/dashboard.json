@@ -1,0 +1,24 @@
+{
+ "content": null, 
+ "creation": "2018-03-24 17:15:25.276242", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "icon": "fa-fa-chart-bar", 
+ "idx": 0, 
+ "modified": "2018-03-24 18:22:22.909664", 
+ "modified_by": "Administrator", 
+ "module": "flexone", 
+ "name": "dashboard", 
+ "owner": "Administrator", 
+ "page_name": "dashboard", 
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 0, 
+ "title": "Dashboard"
+}

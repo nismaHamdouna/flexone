@@ -1,0 +1,20 @@
+{
+ "content": null, 
+ "creation": "2018-04-10 17:47:25.187545", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "icon": "fa fa-cloud", 
+ "idx": 0, 
+ "modified": "2018-04-10 17:57:10.977412", 
+ "modified_by": "Administrator", 
+ "module": "flexone", 
+ "name": "home-page", 
+ "owner": "Administrator", 
+ "page_name": "Home Page", 
+ "roles": [], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 0, 
+ "title": "Flexsofts.com"
+}

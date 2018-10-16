@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include flexone *.css
+recursive-include flexone *.csv
+recursive-include flexone *.html
+recursive-include flexone *.ico
+recursive-include flexone *.js
+recursive-include flexone *.json
+recursive-include flexone *.md
+recursive-include flexone *.png
+recursive-include flexone *.py
+recursive-include flexone *.svg
+recursive-include flexone *.txt
+recursive-exclude flexone *.pyc

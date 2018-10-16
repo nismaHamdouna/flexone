@@ -1,0 +1,129 @@
+<section class="content" >
+<div class="row ">
+  <div class="col-md-1 pull-right">
+    <input type="button" class="btn btn-success " value={{ __("Reload") }} onClick="window.location.reload()">
+  </div>
+</div>
+    <!-- Info boxes -->
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-aqua"><i class="fa fa-shopping-cart"></i></span>
+
+          <div class="info-box-content">
+          <span class="info-box-text" id="total_sales_name"></span>
+          <span class="info-box-number" id="total_sales_value"></span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+           <span class="info-box-icon bg-green"><i class="fa fa-usd"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-text" id="total_collection_name"></span>
+            <span class="info-box-number" id="total_collection_value"></span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+
+      <!-- fix for small devices only -->
+      <div class="clearfix visible-sm-block"></div>
+
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+         
+		  <span class="info-box-icon bg-red"><i class="fa fa-money"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-text" id="due_amount_name"></span>
+            <span class="info-box-number" id="due_amount_value"></span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-yellow"><i class="fa fa-calendar"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-text" id="current_date_name"></span>
+            <span class="info-box-number" id="current_date_value"></span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+        <section class="col-lg-7 connectedSortable ui-sortable">
+            <div class="box box-profit">
+                <div class="box-header with-border">
+                  <h3 class="box-title" id="profit_and_loss_chart_title" ></h3>
+                </div>
+                <div class="box-body" >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="ProfitLossChart">
+                        <div id="profit_and_loss_chart" ></div>
+                      </div>
+                    </div>
+                  </div>         
+                </div>
+              </div>
+              <div class="box box-danger">
+                  <div class="box-header with-border">
+                    <h3 class="box-title" id="outstanding_customer_header"></h3>
+                  </div>
+                  <div class="box-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                       
+                        <div id="OutstandingCustomerChart">
+                        <div id="top_10_customer_outstanding"></div>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="box box-profit">
+                    <div class="box-header with-border">
+                      <h3 class="box-title" id="top_5_items_chart_title" ></h3>
+                    </div>
+                    <div class="box-body" >
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div id="Top5ItemsChart">
+                            <div id="top_5_items_chart" ></div>
+                          </div>
+                        </div>
+                      </div>         
+                    </div>
+                  </div>
+
+                </section>
+                  <section class="col-lg-5 connectedSortable ui-sortable">
+                      <div class="box box-success">
+                      
+                          	<div class="box-body" >
+                              <div id="email-digest"></div>
+                             </div>
+                            </div>
+                    </section>
+         
+
+
+
+    </div>
+</section>

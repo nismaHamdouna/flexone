@@ -1,0 +1,19 @@
+{
+    "css/flexone.min.css": [
+        "public/css/origintheme.css",
+        "public/css/skin-origin.css",
+        "public/css/custom.css",
+        "public/css/temp.css",
+        "public/css/c3.css" ,
+        "public/css/flexone_dashboard.css",
+        "public/css/flexone_custom.css"
+               
+    ],
+    "js/flexone.min.js": [
+        "public/js/origintheme.js",
+        "public/js/custom.js"
+    ],
+    "js/flexone-template.min.js": [
+        "public/js/template/main-sidebar.html"
+    ]    
+}
